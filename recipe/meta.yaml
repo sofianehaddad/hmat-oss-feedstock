@@ -14,6 +14,7 @@ source:
     - 7d14b6451d3f63a949fee9c09d349aec6edd193e.patch
     - 2bea755a2139907d331bfa0229154b6dab7a61c1.patch
     - aad9de409bc2e0a8a50fed1169df0a06a252f399.patch
+    - 0054f6aac9b19cb2ce4672f21779488363188f56.patch
 
 build:
   number: 201
