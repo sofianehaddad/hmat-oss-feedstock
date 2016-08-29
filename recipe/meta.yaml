@@ -17,7 +17,7 @@ source:
     - 0054f6aac9b19cb2ce4672f21779488363188f56.patch
 
 build:
-  number: 201
+  number: 202
   skip: true  # [win]
   features:
     - blas_{{ variant }}
