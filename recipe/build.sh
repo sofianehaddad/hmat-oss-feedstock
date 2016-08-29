@@ -19,6 +19,6 @@ cmake \
   -DCMAKE_CXX_FLAGS="-std=c++11" \
   ..
 
-make install
+make install -j${CPU_COUNT}
 rm -r ${PREFIX}/bin/examples
 ./c-simple-cylinder 1000 D
