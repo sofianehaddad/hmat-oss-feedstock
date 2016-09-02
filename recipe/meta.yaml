@@ -9,6 +9,8 @@ source:
   fn: hmat-oss-{{ version }}.tar.gz
   url: https://github.com/jeromerobert/hmat-oss/archive/{{ version }}.tar.gz
   sha256: e52eefa6d34d338104c7058f11f724912d6a3626bce4101b5f798c3ab93f383c
+  patches:
+    - fix-libm-detection.patch  # https://github.com/jeromerobert/hmat-oss/commit/195ee190b2f74c9c2387afe50574004b98b864af
 
 build:
   number: 200
