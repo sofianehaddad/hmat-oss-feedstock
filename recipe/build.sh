@@ -10,7 +10,7 @@ fi
 mkdir -p build && cd build
 
 cmake \
-  -DCMAKE_FIND_ROOT_PATH=${PREFIX} \
+  -DCMAKE_PREFIX_PATH=${PREFIX} \
   -DCMAKE_INSTALL_PREFIX=${PREFIX} \
   -DBLAS_LIBRARIES=${PREFIX}/lib/libopenblas${SO_EXT} \
   -DBUILD_EXAMPLES=ON \
