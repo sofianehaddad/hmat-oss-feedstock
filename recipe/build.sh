@@ -20,5 +20,5 @@ cmake \
   ..
 
 make install -j${CPU_COUNT}
-rm -r ${PREFIX}/bin/examples
+#rm -r ${PREFIX}/bin/examples
 ./c-simple-cylinder 1000 D
