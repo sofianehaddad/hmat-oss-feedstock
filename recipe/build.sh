@@ -12,6 +12,7 @@ mkdir -p build && cd build
 cmake \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
   -DCMAKE_INSTALL_PREFIX=${PREFIX} \
+  -DINSTALL_INCLUDE_DIR=${PREFIX}/include/hmat \
   -DBLAS_LIBRARIES=${PREFIX}/lib/libopenblas${SO_EXT} \
   -DBUILD_EXAMPLES=ON \
   -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,${PREFIX}/lib -L${PREFIX}/lib" \
