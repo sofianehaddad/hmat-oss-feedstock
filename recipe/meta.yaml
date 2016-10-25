@@ -13,7 +13,7 @@ source:
     - fix-libm-detection.patch  # https://github.com/jeromerobert/hmat-oss/commit/195ee190b2f74c9c2387afe50574004b98b864af
 
 build:
-  number: 201
+  number: 202
   skip: true  # [win]
   features:
     - blas_{{ variant }}
@@ -31,7 +31,7 @@ requirements:
 
 test:
   commands:
-    - test -f ${PREFIX}/include/hmat/hmat.h  # [unix]
+    - test -f ${PREFIX}/include/hmat/hmat/hmat.h  # [unix]
     - test -f ${PREFIX}/lib/libhmat-oss.so  # [linux]
     - test -f ${PREFIX}/lib/libhmat-oss.dylib  # [osx]
 
