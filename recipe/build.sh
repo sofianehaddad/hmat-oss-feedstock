@@ -2,9 +2,9 @@
 
 if test `uname` = "Darwin"
 then
-  SO_EXT='.dylib'
+  SHLIB_EXT='.dylib'
 else
-  SO_EXT='.so'
+  SHLIB_EXT='.so'
 fi
 
 mkdir -p build && cd build
@@ -13,7 +13,7 @@ cmake \
   -DCMAKE_PREFIX_PATH=${PREFIX} \
   -DCMAKE_INSTALL_PREFIX=${PREFIX} \
   -DINSTALL_INCLUDE_DIR=${PREFIX}/include/hmat \
-  -DBLAS_LIBRARIES=${PREFIX}/lib/libopenblas${SO_EXT} \
+  -DBLAS_LIBRARIES=${PREFIX}/lib/libopenblas${SHLIB_EXT} \
   -DBUILD_EXAMPLES=ON \
   -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,${PREFIX}/lib -L${PREFIX}/lib" \
   -DCMAKE_MACOSX_RPATH=ON \
