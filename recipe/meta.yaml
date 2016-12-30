@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.5.0" %}
 {% set variant = "openblas" %}
 
 package:
@@ -8,12 +8,10 @@ package:
 source:
   fn: hmat-oss-{{ version }}.tar.gz
   url: https://github.com/jeromerobert/hmat-oss/archive/{{ version }}.tar.gz
-  sha256: e52eefa6d34d338104c7058f11f724912d6a3626bce4101b5f798c3ab93f383c
-  patches:
-    - fix-libm-detection.patch  # https://github.com/jeromerobert/hmat-oss/commit/195ee190b2f74c9c2387afe50574004b98b864af
+  sha256: 21a64d1df1c9bb7221205020b95af8bff65668d0d2cfde5431d0e9fc7958d0a9
 
 build:
-  number: 203
+  number: 200
   skip: true  # [win]
   features:
     - blas_{{ variant }}
